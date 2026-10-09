@@ -97,3 +97,8 @@ button:active {
     max-width: 960px;
     aspect-ratio: 1;
 }
+
+.square {
+    border-right: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
