@@ -1,0 +1,99 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* PAGE LAYOUT */
+body {
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 15px 0;
+    width: 85vmin;
+    max-width: 960px;
+    row-gap: 15px;
+}
+
+/* FORM CONTROLS: general */
+input,
+button {
+    font: inherit;
+    font-size: 0.8em;
+}
+
+#size {
+    font-size: 0.75em;
+    -moz-appearance: textfield;
+    /* hide spinner arrows: Firefox */
+    appearance: textfield;
+}
+
+/* Hide number input spinner arrows: Chrome, Safari, Edge */
+#size::-webkit-outer-spin-button,
+#size::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* STYLE OPTIONS */
+input[type="radio"] {
+    width: 0.8em;
+    height: 0.8em;
+}
+
+.styling-field {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.sizing-field label,
+.styling-field span {
+    font-weight: bold;
+}
+
+.styling-field label {
+    font-size: 0.8em;
+    margin-right: 0.6em;
+}
+
+/* BUTTONS */
+button {
+    background-color: whitesmoke;
+    border: 1px solid #999;
+    border-radius: 8px;
+    padding: 0.075em 0.4em;
+    cursor: pointer;
+    transition: background-color 0.10s ease-in-out;
+}
+
+button:hover {
+    background-color: lightgrey;
+}
+
+button:active {
+    background-color: darkgrey;
+}
+
+/* GRID */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 85vmin;
+    max-width: 960px;
+    aspect-ratio: 1;
+}
