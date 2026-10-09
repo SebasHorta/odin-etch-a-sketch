@@ -99,6 +99,6 @@ button:active {
 }
 
 .square {
-    border-right: 2px solid #ddd;
-    border-bottom: 2px solid #ddd;
+    border-right: 2px solid #aaa;
+    border-bottom: 2px solid #aaa;
 }

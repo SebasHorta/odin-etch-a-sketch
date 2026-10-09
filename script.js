@@ -24,5 +24,8 @@ function handleSubmit() {
 }
 
 submit.addEventListener("click", handleSubmit);
+sizeInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") handleSubmit();
+});
 
 createGrid(16);
